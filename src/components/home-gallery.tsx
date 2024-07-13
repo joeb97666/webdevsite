@@ -26,7 +26,11 @@ To read more about using these font, please visit the Next.js documentation:
 import Link from "next/link"
 import Image from "next/image"
 import ButtonLink from "./ButtonLink"
-import { PiFileHtmlThin } from "react-icons/pi";
+import { PiFileHtmlThin , PiFileCssThin, PiFileTsxThin} from "react-icons/pi";
+import { SiAdobephotoshop, SiAdobeillustrator , SiAdobecreativecloud, SiPm2, SiNginx} from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { DiDocker } from "react-icons/di";
+import { TbMailCog } from "react-icons/tb";
 
 export function HomeGallery() {
   return (
@@ -95,21 +99,53 @@ export function HomeGallery() {
      
       <section className="container mx-auto px-0 py-0 md:py-0">
         <h2 className="mb-8 text-3xl font-bold tracking-tight text-foreground"></h2>
-        <div className="grid md:grid-cols-2 gap-8 sm:grid-cols-1 lg:grid-cols-4">
+        <div className="grid md:grid-cols-2 gap-8 sm:grid-cols-1 lg:grid-cols-3">
           <div className="rounded-lg border border-input bg-card p-4 shadow-sm">
-          <PiFileHtmlThin /><CodeIcon className="mb-4 h-8 w-8 text-primary" />
-            <h3 className="mb-2 text-lg font-semibold text-foreground"> UI/UX Design  </h3>
-            <p className="text-muted-foreground">
-             We create seamless modern, responsive, and user-friendly experiences using the latest web technologies optimized for various devices and screen sizes.
-            </p>
-           
+            <h3 className="mb-2 text-lg text-center font-semibold text-foreground"> UI/UX Design  
+
+            </h3>
+             <div className="mx-auto pt-1 flex items-center justify-center flex-row space-x-4">
+              
+                <RiTailwindCssFill className="h-6 w-8 text-center text-primary"/>
+                <PiFileTsxThin className="h-8 w-8 text-center text-primary"/>
+                <PiFileCssThin className="h-8 w-8 text-center text-primary"/>
+                <PiFileHtmlThin className="h-8 w-8 text-center text-primary"/>
+                
+              </div>
+                <br></br>
+                <div className="mx-auto px-7">
+                  <p className=" text-muted-foreground">
+                    We create seamless modern, responsive, and user-friendly experiences using the latest web technologies optimized for various devices and screen sizes.
+                  </p>
+                  <br></br>
+                  <p className="text-muted-foreground">
+                    We accomplish this by building user interfaces, graphics, and application functionality; Attracting users and forming active client relationships.
+                  </p> 
+                </div>
           </div>
           <div className="rounded-lg border border-input bg-card p-4 shadow-sm">
-          <TypeIcon className="mb-4 h-8 w-8 text-primary" />
-          <h3 className="mb-2 text-lg font-semibold text-foreground"> Web Development </h3>
-            <p className="text-muted-foreground">
-            We accomplish this by building user interfaces, graphics, and application functionality; Attracting users and forming active client relationships.
-          </p> 
+            <h3 className="mb-2 text-lg text-center font-semibold text-foreground"> Graphic Design
+          
+            </h3>
+            <div className="mx-auto  pt-2 flex items-center justify-center flex-row space-x-4">
+            <SiAdobeillustrator className="h-8 w-8 text-center text-primary" />
+            <SiAdobecreativecloud className="h-8 w-8 text-center text-primary"/>
+            <SiAdobephotoshop className="h-8 w-8 text-center text-primary"/>
+            </div>
+            
+          
+          </div>
+          <div className="rounded-lg border border-input bg-card p-4 shadow-sm">
+            <h3 className="mb-2 text-lg text-center font-semibold text-foreground"> Server Hosting Email & Security
+          
+            </h3>
+            <div className="mx-auto  pt-2 flex items-center justify-center flex-row space-x-4">
+            <SiNginx className="h-8 w-8 text-center text-primary" />
+            <SiPm2  className="h-8 w-8 text-center text-primary"/>
+            <DiDocker  className="h-11 w-11 text-center text-primary"/>
+            <TbMailCog className="h-8 w-8 text-center text-primary"/>
+            </div>
+            
           
           </div>
         </div>
