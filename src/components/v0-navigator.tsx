@@ -44,19 +44,25 @@ export function V0Navigatior() {
                     <Link className="WebDev group grid h-auto w-full justify-start gap-1" href="#/WebDev">
                       <div className="text-sm font-medium leading-none group-hover:underline">Web Development</div>
                       <div className="line-clamp-2 text-sm leading-snug text-gray-500 dark:text-gray-400">
-                        Build scalable and robust web applications.
+                        Build scalable and robust web and mobile applications.
                       </div>
                     </Link>
                     <Link className="MobileDev group grid h-auto w-full justify-start gap-1" href="#/MobileDev">
-                      <div className="text-sm font-medium leading-none group-hover:underline">Mobile Development</div>
+                      <div className="text-sm font-medium leading-none group-hover:underline">Digital Presence Optimzation</div>
                       <div className="line-clamp-2 text-sm leading-snug text-gray-500 dark:text-gray-400">
-                        Create engaging mobile applications for all platforms.
+                      Optimize your search engine results (SEO) and other digital marketing efforts.
                       </div>
                     </Link>
                     <Link className="UI/UX group grid h-auto w-full justify-start gap-1" href="#/UiUx">
-                      <div className="text-sm font-medium leading-none group-hover:underline">UI/UX Design</div>
+                      <div className="text-sm font-medium leading-none group-hover:underline">Graphic Design</div>
                       <div className="line-clamp-2 text-sm leading-snug text-gray-500 dark:text-gray-400">
-                        Design intuitive and user-friendly interfaces.
+                      Establish a winning Visual Brand Identity. 
+                      </div>
+                    </Link>
+                    <Link className="UI/UX group grid h-auto w-full justify-start gap-1" href="#/UiUx">
+                      <div className="text-sm font-medium leading-none group-hover:underline">Custom eMail Servers</div>
+                      <div className="line-clamp-2 text-sm leading-snug text-gray-500 dark:text-gray-400">
+                      YourTeamX@YourWebsite.com
                       </div>
                     </Link>
                   </div>
@@ -120,25 +126,40 @@ export function V0Navigatior() {
               </NavigationMenuTrigger>
               <NavigationMenuContent>
                 <div className="grid w-[400px] p-2">
+
+
+                <NavigationMenuLink asChild>
+                    <Link
+                      className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-white p-4 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
+                      href="./WebDev"
+                    >
+                      <div className="text-sm font-medium leading-none group-hover:underline">Digital Presence Optimzation</div>
+                      <div className="line-clamp-2 text-sm leading-snug text-gray-500 dark:text-gray-400">
+                      Optimize your search engine results (SEO) and other digital marketing efforts.
+                      </div>
+                    </Link>
+                  </NavigationMenuLink>
+
                   <NavigationMenuLink asChild>
                     <Link
                       className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-white p-4 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
                       href="./WebDev"
                     >
-                      <div className="text-sm font-medium leading-none group-hover:underline">Web Development</div>
+                      <div className="text-sm font-medium leading-none group-hover:underline">Mobile & Web Development</div>
                       <div className="line-clamp-2 text-sm leading-snug text-gray-500 dark:text-gray-400">
-                        Build scalable and robust web applications.
+                        Build scalable and robust web apps for all platforms.
                       </div>
                     </Link>
                   </NavigationMenuLink>
+                
                   <NavigationMenuLink asChild>
                     <Link
                       className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-white p-4 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
                       href="./MobileDev"
                     >
-                      <div className="text-sm font-medium leading-none group-hover:underline">Mobile Development</div>
+                      <div className="text-sm font-medium leading-none group-hover:underline">Graphic Design</div>
                       <div className="line-clamp-2 text-sm leading-snug text-gray-500 dark:text-gray-400">
-                        Create engaging mobile applications for all platforms.
+                        Establish a winning Visual Brand Identity. 
                       </div>
                     </Link>
                   </NavigationMenuLink>
@@ -147,9 +168,9 @@ export function V0Navigatior() {
                       className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-white p-4 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
                       href="./UiUx"
                     >
-                      <div className="text-sm font-medium leading-none group-hover:underline">UI/UX Design</div>
+                      <div className="text-sm font-medium leading-none group-hover:underline"> Custom Email Servers</div>
                       <div className="line-clamp-2 text-sm leading-snug text-gray-500 dark:text-gray-400">
-                        Design intuitive and user-friendly interfaces.
+                        YourTeamX@YourWebsite.com
                       </div>
                     </Link>
                   </NavigationMenuLink>
@@ -203,7 +224,7 @@ export function V0Navigatior() {
           </NavigationMenuList>
         </NavigationMenu>
       </header>
-      <main className="w-full py-12 md:py-24 lg:py-32" />
+      <main className="w-full py-2 md:py-8 lg:py-12" />
     </>
   )
 }
