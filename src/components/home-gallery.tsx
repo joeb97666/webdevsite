@@ -27,7 +27,7 @@ import Link from "next/link"
 import Image from "next/image"
 import ButtonLink from "./ButtonLink"
 import { PiFileHtmlThin , PiFileCssThin, PiFileTsxThin} from "react-icons/pi";
-import { SiAdobephotoshop, SiAdobeillustrator , SiAdobecreativecloud, SiPm2, SiNginx} from "react-icons/si";
+import { SiAdobephotoshop, SiAdobeillustrator , SiAdobecreativecloud, SiPm2, SiLetsencrypt, SiNginx} from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { DiDocker } from "react-icons/di";
 import { TbMailCog } from "react-icons/tb";
@@ -113,13 +113,13 @@ export function HomeGallery() {
                 
               </div>
                 <br></br>
-                <div className="mx-auto px-7">
-                  <p className=" text-muted-foreground">
+                <div className="mx-auto px-6 text-justify">
+                  <p className="text-xs">
                     We create seamless modern, responsive, and user-friendly experiences using the latest web technologies optimized for various devices and screen sizes.
                   </p>
-                  <br></br>
-                  <p className="text-muted-foreground">
-                    We accomplish this by building user interfaces, graphics, and application functionality; Attracting users and forming active client relationships.
+
+                  <p className="text-xs">
+                  We attract and form active client relationships by building beautiful user interfaces with exemplary application functionality.
                   </p> 
                 </div>
           </div>
@@ -127,26 +127,39 @@ export function HomeGallery() {
             <h3 className="mb-2 text-lg text-center font-semibold text-foreground"> Graphic Design
           
             </h3>
-            <div className="mx-auto  pt-2 flex items-center justify-center flex-row space-x-4">
+            <div className="mx-auto pt-0.5 flex items-center justify-center flex-row space-x-4">
             <SiAdobeillustrator className="h-8 w-8 text-center text-primary" />
             <SiAdobecreativecloud className="h-8 w-8 text-center text-primary"/>
             <SiAdobephotoshop className="h-8 w-8 text-center text-primary"/>
             </div>
-            
+            <div className="mx-auto pt-6 px-6 text-justify">
+             <p className=" text-xs"> Graphics, color and typography are essential to visually representing your brand's identity and style. </p>
+             <p className="text-xs"> Our excellence in graphic design comes from our meticulous blending of visual elements.</p>
           
+             </div>
           </div>
           <div className="rounded-lg border border-input bg-card p-4 shadow-sm">
-            <h3 className="mb-2 text-lg text-center font-semibold text-foreground"> Server Hosting Email & Security
-          
-            </h3>
-            <div className="mx-auto  pt-2 flex items-center justify-center flex-row space-x-4">
-            <SiNginx className="h-8 w-8 text-center text-primary" />
-            <SiPm2  className="h-8 w-8 text-center text-primary"/>
-            <DiDocker  className="h-11 w-11 text-center text-primary"/>
-            <TbMailCog className="h-8 w-8 text-center text-primary"/>
+              <h3 className="mb-2 text-lg text-center font-semibold text-foreground"> Server Hosting Email & Security
+              </h3>
+            <div className="mx-auto flex items-center justify-center flex-row space-x-4">
+              <SiNginx className="h-8 w-8 text-center text-primary" />
+              
+              
+              <TbMailCog className="h-8 w-8 text-center text-primary"/>
+              <SiLetsencrypt className="h-8 w-8 text-center text-primary"/>
+
+              <DiDocker  className="h-11 w-11 text-center text-primary"/>
+              <SiPm2  className="h-8 w-8 text-center text-primary"/>
             </div>
             
+            <div className="mx-auto pt-3 px-6 text-justify">
+             <p className=" text-xs"
+             > Protecting your communications and data is a prime objective in building and maintaining your server architecture.</p>
+             <p className="text-xs"
+             > Our websites use HTTPS, TLS 1.2+ , and ACME encryption protocols. Active firewall and port monitoring are also utilized in protecting you and your clients. </p>
+            
           
+             </div>
           </div>
         </div>
       
