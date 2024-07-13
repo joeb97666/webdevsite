@@ -94,7 +94,7 @@ export function HomeGallery() {
      
       <section className="container mx-auto px-0 py-0 md:py-0">
         <h2 className="mb-8 text-3xl font-bold tracking-tight text-foreground"></h2>
-        <div className="grid grid-cols-4 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-4 gap-8 sm:grid-cols-1 lg:grid-cols-4">
           <div className="rounded-lg border border-input bg-card p-4 shadow-sm">
           <CodeIcon className="mb-4 h-8 w-8 text-primary" />
             <h3 className="mb-2 text-lg font-semibold text-foreground"> UI/UX Design  </h3>
