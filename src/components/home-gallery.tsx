@@ -94,28 +94,22 @@ export function HomeGallery() {
      
       <section className="container mx-auto px-0 py-0 md:py-0">
         <h2 className="mb-8 text-3xl font-bold tracking-tight text-foreground"></h2>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-4 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="rounded-lg border border-input bg-card p-4 shadow-sm">
-            <CodeIcon className="mb-4 h-8 w-8 text-primary" />
-            <h3 className="mb-2 text-lg font-semibold text-foreground">Web Development</h3>
+          <CodeIcon className="mb-4 h-8 w-8 text-primary" />
+            <h3 className="mb-2 text-lg font-semibold text-foreground"> UI/UX Design  </h3>
             <p className="text-muted-foreground">
-             We build modern, responsive, and user-friendly websites using the latest web technologies.
+             We create seamless modern, responsive, and user-friendly experiences using the latest web technologies optimized for various devices and screen sizes.
             </p>
+           
           </div>
           <div className="rounded-lg border border-input bg-card p-4 shadow-sm">
-            <TypeIcon className="mb-4 h-8 w-8 text-primary" />
-            <h3 className="mb-2 text-lg font-semibold text-foreground">UI/UX Design</h3>
+          <TypeIcon className="mb-4 h-8 w-8 text-primary" />
+          <h3 className="mb-2 text-lg font-semibold text-foreground"> Web Development </h3>
             <p className="text-muted-foreground">
-            "We create user interfaces, graphics, and user experiences to attract users and form active client relationships."
-            </p>
-          </div>
-          <div className="rounded-lg border border-input bg-card p-4 shadow-sm">
-            <AccessibilityIcon className="mb-4 h-8 w-8 text-primary" />
-            <h3 className="mb-2 text-lg font-semibold text-foreground">Responsive Design</h3>
-            <p className="text-muted-foreground">
-              Each piece of media we create are optimized for various devices and screen sizes, providing a seamless
-              experience.
-            </p>
+            We accomplish this by building user interfaces, graphics, and application functionality; Attracting users and forming active client relationships.
+          </p> 
+          
           </div>
         </div>
       
