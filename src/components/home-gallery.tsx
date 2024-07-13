@@ -133,7 +133,7 @@ export function HomeGallery() {
             <SiAdobephotoshop className="h-8 w-8 text-center text-primary"/>
             </div>
             <div className="mx-auto pt-6 px-6 text-justify">
-             <p className=" text-xs"> Graphics, color and typography are essential to visually representing your brand's identity and style. </p>
+             <p className="text-xs"> Graphics, color and typography are essential to visually representing your brand&apos;s identity and style. </p>
              <p className="text-xs"> Our excellence in graphic design comes from our meticulous blending of visual elements.</p>
           
              </div>
@@ -149,7 +149,7 @@ export function HomeGallery() {
               <SiLetsencrypt className="h-8 w-8 text-center text-primary"/>
 
               <DiDocker  className="h-11 w-11 text-center text-primary"/>
-              <SiPm2  className="h-8 w-8 text-center text-primary"/>
+              <SiPm2  className="h-8 w-8 text-center text-primary"/> 
             </div>
             
             <div className="mx-auto pt-3 px-6 text-justify">
