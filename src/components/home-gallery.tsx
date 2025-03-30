@@ -56,7 +56,7 @@ export function HomeGallery() {
   <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
     {[
       {
-        href: "https://www.jp-gardening.com/",
+        href: "https://jpgardening-joeb97666s-projects.vercel.app",
         title: "JP Gardening",
         description: "A simple but effective website for a local landscaping company.",
         imageSrc: "/jp_gardening.png",
