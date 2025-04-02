@@ -70,7 +70,7 @@ export function HomeGallery() {
         alt: "Tax Prep"
       },
       {
-        href: "localhost:3000",
+        href: "https://www.instagram.com/detailhabit562",
         title: "Automotive Detailing",
         description: "A website showcasing automotive detailing services with appointment setting and \"buy now\" functionality.",
         imageSrc: "/DetailHabit.jpg",
