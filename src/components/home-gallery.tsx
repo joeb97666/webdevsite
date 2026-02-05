@@ -53,7 +53,7 @@ export function HomeGallery() {
     {[
       {
         href: "https://www.theaviancompany.com",
-        title: "The Avian Company -- Custom Arduino Boards, Electronics Repair & Learning Community",
+        title: "The Avian Company -- \nCustom Arduino Boards, Electronics Repair & Learning Community",
         description: "A fully functional e-commerce Arduino and Electronics Store with a Commmunity",
         imageSrc: "/avianlogo.jpg",
         alt: "A V I A N"
