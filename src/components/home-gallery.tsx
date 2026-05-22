@@ -59,7 +59,7 @@ export function HomeGallery() {
         alt: "A V I A N"
       },
       {
-        href: "https://jpgardening-joeb97666s-projects.vercel.app",
+        href: "jp-garden.vercel.app",
         title: "JP Gardening",
         description: "A simple but effective website for a local landscaping company.",
         imageSrc: "/jp_gardening.png",

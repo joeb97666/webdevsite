@@ -1,12 +1,26 @@
-'use client'
-import Image from 'next/image'
 import { V0Navigatior } from '@/components/v0-navigator'
+import CardHow from '@/components/CardHow'
+import { Metadata } from 'next';
+
+
+const pageTitle = 'Our Team';
+
+export const metadata: Metadata = {
+    title: 'pageTitle',
+    description: 'A brief description of our team members.'
+};
+
+
+
 export default function OurTeam() {
   return (
 <div>
     <V0Navigatior/>
 
-    <h1>Our team profile here</h1>
+
+    <CardHow title={pageTitle}/>
+
 </div>
-  )
-}
+
+);
+};
