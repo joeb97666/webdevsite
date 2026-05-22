@@ -20,7 +20,7 @@ To read more about using these font, please visit the Next.js documentation:
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
 import Link from "next/link"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import ButtonLink from "./ButtonLink"
 import { PiFileHtmlThin , PiFileCssThin, PiFileTsxThin} from "react-icons/pi";
 import { SiAdobephotoshop, SiAdobeillustrator , SiAdobecreativecloud, SiPm2, SiLetsencrypt, SiNginx} from "react-icons/si";

@@ -1,5 +1,5 @@
 'use client'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import { V0Navigatior } from '@/components/v0-navigator'
 import { HomeGallery } from '@/components/home-gallery'
 export default function Home() {
