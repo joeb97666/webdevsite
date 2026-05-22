@@ -1,27 +1,9 @@
 
+// @/src/components/home-gallery.tsx
 
-/** Add fonts into your Next.js project:
-
-import { Libre_Franklin } from 'next/font/google'
-import { IBM_Plex_Sans } from 'next/font/google'
-
-libre_franklin({
-  subsets: ['latin'],
-  display: 'swap',
-})
-
-ibm_plex_sans({
-  subsets: ['latin'],
-  display: 'swap',
-})
-
-To read more about using these font, please visit the Next.js documentation:
-- App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
-- Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
-**/
 import Link from "next/link"
-import Image from "next/legacy/image"
-import ButtonLink from "./ButtonLink"
+import Image from "next/image"
+
 import { PiFileHtmlThin , PiFileCssThin, PiFileTsxThin} from "react-icons/pi";
 import { SiAdobephotoshop, SiAdobeillustrator , SiAdobecreativecloud, SiPm2, SiLetsencrypt, SiNginx} from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -31,75 +13,76 @@ import { TbMailCog } from "react-icons/tb";
 export function HomeGallery() {
   return (
     <div className="flex min-h-[100dvh] flex-col bg-background">
-     <section className="container mx-auto flex flex-col items-center justify-center px-4 py-8 md:py-12 lg:py-16">
-  <div className="max-w-3xl text-center">
-    <h1 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl lg:text-5xl">
-      Welcome
-    </h1>
-    <p className="mt-4 text-lg text-muted-foreground">
-      Discover a collection of digital media.
-    </p>
-    {/* <div className="mt-8 flex flex-wrap justify-center gap-4">
-      <ButtonLink href="https://www.jp-gardening.com/" text="Websites" />
-      <ButtonLink href="#" text="Custom Mailservers" />
-      <ButtonLink href="#" text="Adobe Illustrations" />
-      <ButtonLink href="#" text="Search Engine Optimization" />
-    </div> */}
-  </div>
-</section>
-<section id="websites" className="container mx-auto px-2 py-8 md:py-16">
-  <h2 className="mb-8 text-3xl font-bold tracking-tight text-foreground text-center">Websites</h2>
-  <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-    {[
-      {
-        href: "https://www.theaviancompany.com",
-        title: "The Avian Company -- \nCustom Arduino Boards, Electronics Repair & Learning Community",
-        description: "A fully functional e-commerce Arduino and Electronics Store with a Commmunity",
-        imageSrc: "/avianlogo.jpg",
-        alt: "A V I A N"
-      },
-      {
-        href: "jp-garden.vercel.app",
-        title: "JP Gardening",
-        description: "A simple but effective website for a local landscaping company.",
-        imageSrc: "/jp_gardening.png",
-        alt: "JP Gardening"
-      },
-      {
-        href: "https://taxprep.vercel.app/",
-        title: "Tax Preparation",
-        description: "A website offering tax services with appointment setting and \"buy now\" functionality.",
-        imageSrc: "/taxprep.png",
-        alt: "Tax Prep"
-      },
-      {
-        href: "https://detailhabit.vercel.app",
-        title: "Automotive Detailing",
-        description: "A website showcasing automotive detailing services with appointment setting and \"buy now\" functionality.",
-        imageSrc: "/DetailHabit.jpg",
-        alt: "DetailHabit"
-      }
-    ].map((card, index) => (
-      <div key={index} className="rounded-lg border border-input bg-card overflow-hidden shadow-sm transition-all hover:scale-105 hover:shadow-md flex flex-col h-full">
-        <Link href={card.href} className="flex flex-col h-full">
-          <div className="p-4 bg-black bg-opacity-50">
-            <h3 className="mb-2 text-lg font-semibold text-white">{card.title}</h3>
-            <p className="text-white text-sm">{card.description}</p>
-          </div>
-          <div className="relative flex-grow" style={{ paddingTop: '75%' }}> {/* 4:3 aspect ratio */}
-            <Image
-              src={card.imageSrc}
-              alt={card.alt}
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-        </Link>
-      </div>
-    ))}
-  </div>
-</section>
-     
+      <section className="container mx-auto flex flex-col items-center justify-center px-4 py-8 md:py-12 lg:py-16">
+   <div className="max-w-3xl text-center">
+     <h1 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl lg:text-5xl">
+       Welcome
+     </h1>
+     <p className="mt-4 text-lg text-muted-foreground">
+       Discover a collection of digital media.
+     </p>
+     {/* <div className="mt-8 flex flex-wrap justify-center gap-4">
+       <ButtonLink href="https://www.jp-gardening.com/" text="Websites" />
+       <ButtonLink href="#" text="Custom Mailservers" />
+       <ButtonLink href="#" text="Adobe Illustrations" />
+       <ButtonLink href="#" text="Search Engine Optimization" />
+     </div> */}
+   </div>
+ </section>
+      <section id="websites" className="container mx-auto px-2 py-8 md:py-16">
+        <h2 className="mb-8 text-3xl font-bold tracking-tight text-foreground text-center">Websites</h2>
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            {
+              href: "https://www.theaviancompany.com",
+              title: "The Avian Company -- \nCustom Arduino Boards, Electronics Repair & Learning Community",
+              description: "A fully functional e-commerce Arduino and Electronics Store with a Commmunity",
+              imageSrc: "/avianlogo.jpg",
+              alt: "A V I A N"
+            },
+            {
+              href: "jp-garden.vercel.app",
+              title: "JP Gardening",
+              description: "A simple but effective website for a local landscaping company.",
+              imageSrc: "/jp_gardening.png",
+              alt: "JP Gardening"
+            },
+            {
+              href: "https://taxprep.vercel.app/",
+              title: "Tax Preparation",
+              description: "A website offering tax services with appointment setting and \"buy now\" functionality.",
+              imageSrc: "/taxprep.png",
+              alt: "Tax Prep"
+            },
+            {
+              href: "https://detailhabit.vercel.app",
+              title: "Automotive Detailing",
+              description: "A website showcasing automotive detailing services with appointment setting and \"buy now\" functionality.",
+              imageSrc: "/DetailHabit.jpg",
+              alt: "DetailHabit"
+            }
+          ].map((card, index) => (
+            <div key={index} className="rounded-lg border border-input bg-card overflow-hidden shadow-sm transition-all hover:scale-105 hover:shadow-md flex flex-col h-full">
+              <Link href={card.href} className="flex flex-col h-full">
+                <div className="p-4 bg-black bg-opacity-50">
+                  <h3 className="mb-2 text-lg font-semibold text-white">{card.title}</h3>
+                  <p className="text-white text-sm">{card.description}</p>
+                </div>
+                <div className="relative flex-grow" style={{ paddingTop: '75%' }}> {/* 4:3 aspect ratio */}
+                  <Image
+                    src={card.imageSrc}
+                    alt={card.alt}
+                    fill
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    style={{
+                      objectFit: "cover"
+                    }} />
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
+      </section>
       <section className="container mx-auto px-0 py-0 md:py-0">
         <h2 className="mb-8 text-3xl font-bold tracking-tight text-foreground"></h2>
         <div className="grid md:grid-cols-2 gap-8 sm:grid-cols-1 lg:grid-cols-3">
@@ -167,9 +150,8 @@ export function HomeGallery() {
         </div>
       
       </section>
-      </div>
-   
-  )
+    </div>
+  );
 }
 
 function AccessibilityIcon(props:any) {

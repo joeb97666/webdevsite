@@ -1,6 +1,7 @@
+// /src/components/CardHow.tsx
 import { Card, CardContent, CardHeader } from "./ui/card";
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 type CardHowProps = {
     title: string;
@@ -69,7 +70,10 @@ const CardHow = ({ title }: CardHowProps) => {
                                     height={300}
                                     alt="DB-Marketing logo"
                                     className="h-28 w-28 object-contain opacity-90 transition duration-150 hover:opacity-100"
-                                />
+                                    style={{
+                                        maxWidth: "100%",
+                                        height: "auto"
+                                    }} />
                             ) : (
                                 <span className="text-lg font-semibold tracking-tight text-slate-200 transition duration-150 hover:text-white">
                                     DB-Marketing

@@ -1,10 +1,12 @@
+// /src/components/CardContactUs.tsx
+
 import { Card, CardContent, CardTitle, CardDescription, CardHeader } from "./ui/card";
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 
 const CardContactUs = () => {
-    return(
+    return (
         <div>
             <Card className="ring-2 ring-blue-500/30">
             <CardTitle className='text-center'>dbMarketing</CardTitle>
@@ -20,15 +22,20 @@ const CardContactUs = () => {
                     </a>
                 </div>
                     <Link href='/' className='flex-center'>
-                        <Image src='/images/logo.png' 
-                        width={300}
-                        height={300}
-                        alt={`${"DB-Marketing"} logo`}/>
+                        <Image
+                            src='/images/logo.png'
+                            width={300}
+                            height={300}
+                            alt={`${"DB-Marketing"} logo`}
+                            style={{
+                                maxWidth: "100%",
+                                height: "auto"
+                            }} />
                     </Link>
                     
-        </Card> 
+        </Card>
         </div>
-         );    
+    );    
             };
 
 

@@ -1,5 +1,5 @@
 'use client'
-import Image from "next/legacy/image"
+import Image from "next/image"
 import { V0Navigatior } from '@/components/v0-navigator'
 export default function UIUX() {
   return (
